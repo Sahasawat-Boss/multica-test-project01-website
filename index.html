@@ -26,11 +26,15 @@
         <span class="brand__name">Multica<span>AI</span></span>
       </a>
       <nav class="nav__links" id="navLinks">
-        <a href="#features">Features</a>
-        <a href="#how">How it works</a>
-        <a href="#pricing">Pricing</a>
-        <a href="#faq">FAQ</a>
-        <a href="#cta" class="btn btn--ghost">เริ่มใช้งานฟรี</a>
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+        <a href="#cta" class="btn btn--ghost" data-i18n="nav.cta">เริ่มใช้งานฟรี</a>
+        <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+          <span class="lang-switch__icon" aria-hidden="true">🌐</span>
+          <span class="lang-switch__label" id="langLabel">EN</span>
+        </button>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -42,23 +46,23 @@
     <!-- Hero -->
     <section class="hero" id="home">
       <div class="container hero__inner">
-        <span class="badge reveal">⚡ ขับเคลื่อนด้วย Claude Opus 4.8</span>
-        <h1 class="hero__title reveal">
+        <span class="badge reveal" data-i18n="hero.badge">⚡ ขับเคลื่อนด้วย Claude Opus 4.8</span>
+        <h1 class="hero__title reveal" data-i18n-html="hero.title">
           เปลี่ยนงานที่ซ้ำซาก<br />
           ให้กลายเป็น <span class="gradient-text">ระบบอัตโนมัติอัจฉริยะ</span>
         </h1>
-        <p class="hero__sub reveal">
+        <p class="hero__sub reveal" data-i18n="hero.sub">
           Multica AI คือแพลตฟอร์มที่รวมพลัง AI เข้ากับ workflow ของคุณ
           วิเคราะห์ข้อมูล ตอบลูกค้า และตัดสินใจได้แม่นยำขึ้น — ภายในไม่กี่นาที
         </p>
         <div class="hero__actions reveal">
-          <a href="#cta" class="btn btn--primary">เริ่มต้นใช้งานฟรี →</a>
-          <a href="#how" class="btn btn--outline">ดูวิธีการทำงาน</a>
+          <a href="#cta" class="btn btn--primary" data-i18n="hero.ctaPrimary">เริ่มต้นใช้งานฟรี →</a>
+          <a href="#how" class="btn btn--outline" data-i18n="hero.ctaSecondary">ดูวิธีการทำงาน</a>
         </div>
         <div class="hero__stats reveal">
-          <div class="stat"><strong data-count="99.9" data-suffix="%">0</strong><span>Uptime</span></div>
-          <div class="stat"><strong data-count="2400" data-suffix="+">0</strong><span>ธุรกิจที่ใช้งาน</span></div>
-          <div class="stat"><strong data-count="48" data-suffix="M+">0</strong><span>งานที่ประมวลผล</span></div>
+          <div class="stat"><strong data-count="99.9" data-suffix="%">0</strong><span data-i18n="hero.stat1">Uptime</span></div>
+          <div class="stat"><strong data-count="2400" data-suffix="+">0</strong><span data-i18n="hero.stat2">ธุรกิจที่ใช้งาน</span></div>
+          <div class="stat"><strong data-count="48" data-suffix="M+">0</strong><span data-i18n="hero.stat3">งานที่ประมวลผล</span></div>
         </div>
       </div>
     </section>
@@ -68,39 +72,39 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="eyebrow">FEATURES</span>
-          <h2>ทุกสิ่งที่ทีมคุณต้องการ ในที่เดียว</h2>
-          <p>เครื่องมือครบชุดที่ออกแบบมาเพื่อให้คุณโฟกัสกับงานที่สำคัญจริงๆ</p>
+          <h2 data-i18n="features.heading">ทุกสิ่งที่ทีมคุณต้องการ ในที่เดียว</h2>
+          <p data-i18n="features.sub">เครื่องมือครบชุดที่ออกแบบมาเพื่อให้คุณโฟกัสกับงานที่สำคัญจริงๆ</p>
         </div>
         <div class="grid grid--3">
           <article class="card reveal">
             <div class="card__icon">🧠</div>
-            <h3>AI Reasoning</h3>
-            <p>โมเดลภาษาที่เข้าใจบริบทธุรกิจของคุณ ตอบคำถามและสรุปข้อมูลได้อย่างแม่นยำ</p>
+            <h3 data-i18n="features.f1.title">AI Reasoning</h3>
+            <p data-i18n="features.f1.body">โมเดลภาษาที่เข้าใจบริบทธุรกิจของคุณ ตอบคำถามและสรุปข้อมูลได้อย่างแม่นยำ</p>
           </article>
           <article class="card reveal">
             <div class="card__icon">⚙️</div>
-            <h3>Workflow Automation</h3>
-            <p>เชื่อมต่อทุกขั้นตอนการทำงานแบบ no-code ตั้งค่าครั้งเดียว ทำงานได้ตลอด 24 ชม.</p>
+            <h3 data-i18n="features.f2.title">Workflow Automation</h3>
+            <p data-i18n="features.f2.body">เชื่อมต่อทุกขั้นตอนการทำงานแบบ no-code ตั้งค่าครั้งเดียว ทำงานได้ตลอด 24 ชม.</p>
           </article>
           <article class="card reveal">
             <div class="card__icon">📊</div>
-            <h3>Realtime Analytics</h3>
-            <p>แดชบอร์ดที่อัปเดตทันที เห็นภาพรวมและเจาะลึกได้ในคลิกเดียว</p>
+            <h3 data-i18n="features.f3.title">Realtime Analytics</h3>
+            <p data-i18n="features.f3.body">แดชบอร์ดที่อัปเดตทันที เห็นภาพรวมและเจาะลึกได้ในคลิกเดียว</p>
           </article>
           <article class="card reveal">
             <div class="card__icon">🔒</div>
-            <h3>Enterprise Security</h3>
-            <p>เข้ารหัสระดับธนาคาร พร้อมการควบคุมสิทธิ์ละเอียดและ audit log ครบถ้วน</p>
+            <h3 data-i18n="features.f4.title">Enterprise Security</h3>
+            <p data-i18n="features.f4.body">เข้ารหัสระดับธนาคาร พร้อมการควบคุมสิทธิ์ละเอียดและ audit log ครบถ้วน</p>
           </article>
           <article class="card reveal">
             <div class="card__icon">🔌</div>
-            <h3>100+ Integrations</h3>
-            <p>เชื่อมต่อกับเครื่องมือที่คุณใช้อยู่แล้ว ทั้ง Slack, Notion, Google และอีกมากมาย</p>
+            <h3 data-i18n="features.f5.title">100+ Integrations</h3>
+            <p data-i18n="features.f5.body">เชื่อมต่อกับเครื่องมือที่คุณใช้อยู่แล้ว ทั้ง Slack, Notion, Google และอีกมากมาย</p>
           </article>
           <article class="card reveal">
             <div class="card__icon">🚀</div>
-            <h3>Deploy in Minutes</h3>
-            <p>เริ่มต้นได้ทันทีโดยไม่ต้องเขียนโค้ด พร้อมเทมเพลตสำเร็จรูปให้เลือกใช้</p>
+            <h3 data-i18n="features.f6.title">Deploy in Minutes</h3>
+            <p data-i18n="features.f6.body">เริ่มต้นได้ทันทีโดยไม่ต้องเขียนโค้ด พร้อมเทมเพลตสำเร็จรูปให้เลือกใช้</p>
           </article>
         </div>
       </div>
@@ -111,23 +115,23 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="eyebrow">HOW IT WORKS</span>
-          <h2>เริ่มต้นได้ใน 3 ขั้นตอน</h2>
+          <h2 data-i18n="how.heading">เริ่มต้นได้ใน 3 ขั้นตอน</h2>
         </div>
         <div class="steps">
           <div class="step reveal">
             <span class="step__num">01</span>
-            <h3>เชื่อมต่อข้อมูล</h3>
-            <p>นำเข้าข้อมูลจากแหล่งที่คุณใช้ ทั้งไฟล์ ฐานข้อมูล หรือ API</p>
+            <h3 data-i18n="how.s1.title">เชื่อมต่อข้อมูล</h3>
+            <p data-i18n="how.s1.body">นำเข้าข้อมูลจากแหล่งที่คุณใช้ ทั้งไฟล์ ฐานข้อมูล หรือ API</p>
           </div>
           <div class="step reveal">
             <span class="step__num">02</span>
-            <h3>ออกแบบ Workflow</h3>
-            <p>ลาก-วางขั้นตอนการทำงาน แล้วให้ AI จัดการส่วนที่เหลือ</p>
+            <h3 data-i18n="how.s2.title">ออกแบบ Workflow</h3>
+            <p data-i18n="how.s2.body">ลาก-วางขั้นตอนการทำงาน แล้วให้ AI จัดการส่วนที่เหลือ</p>
           </div>
           <div class="step reveal">
             <span class="step__num">03</span>
-            <h3>ปล่อยให้ทำงาน</h3>
-            <p>ระบบทำงานอัตโนมัติ พร้อมรายงานผลและแจ้งเตือนแบบเรียลไทม์</p>
+            <h3 data-i18n="how.s3.title">ปล่อยให้ทำงาน</h3>
+            <p data-i18n="how.s3.body">ระบบทำงานอัตโนมัติ พร้อมรายงานผลและแจ้งเตือนแบบเรียลไทม์</p>
           </div>
         </div>
       </div>
@@ -138,40 +142,40 @@
       <div class="container">
         <div class="section__head reveal">
           <span class="eyebrow">PRICING</span>
-          <h2>ราคาที่โปร่งใส เลือกได้ตามการใช้งาน</h2>
+          <h2 data-i18n="pricing.heading">ราคาที่โปร่งใส เลือกได้ตามการใช้งาน</h2>
         </div>
         <div class="grid grid--3 pricing">
           <article class="card price reveal">
             <h3>Starter</h3>
-            <div class="price__amount">฿0<span>/เดือน</span></div>
+            <div class="price__amount">฿0<span data-i18n="pricing.perMonth">/เดือน</span></div>
             <ul>
-              <li>1,000 งาน/เดือน</li>
-              <li>3 Workflows</li>
-              <li>Community support</li>
+              <li data-i18n="pricing.starter.l1">1,000 งาน/เดือน</li>
+              <li data-i18n="pricing.starter.l2">3 Workflows</li>
+              <li data-i18n="pricing.starter.l3">Community support</li>
             </ul>
-            <a href="#cta" class="btn btn--outline btn--block">เริ่มฟรี</a>
+            <a href="#cta" class="btn btn--outline btn--block" data-i18n="pricing.starter.cta">เริ่มฟรี</a>
           </article>
           <article class="card price price--featured reveal">
-            <span class="price__tag">ยอดนิยม</span>
+            <span class="price__tag" data-i18n="pricing.popular">ยอดนิยม</span>
             <h3>Pro</h3>
-            <div class="price__amount">฿990<span>/เดือน</span></div>
+            <div class="price__amount">฿990<span data-i18n="pricing.perMonth">/เดือน</span></div>
             <ul>
-              <li>50,000 งาน/เดือน</li>
-              <li>Workflows ไม่จำกัด</li>
-              <li>Priority support</li>
-              <li>Advanced analytics</li>
+              <li data-i18n="pricing.pro.l1">50,000 งาน/เดือน</li>
+              <li data-i18n="pricing.pro.l2">Workflows ไม่จำกัด</li>
+              <li data-i18n="pricing.pro.l3">Priority support</li>
+              <li data-i18n="pricing.pro.l4">Advanced analytics</li>
             </ul>
-            <a href="#cta" class="btn btn--primary btn--block">เลือกแพ็กเกจนี้</a>
+            <a href="#cta" class="btn btn--primary btn--block" data-i18n="pricing.pro.cta">เลือกแพ็กเกจนี้</a>
           </article>
           <article class="card price reveal">
             <h3>Enterprise</h3>
-            <div class="price__amount">ติดต่อเรา</div>
+            <div class="price__amount" data-i18n="pricing.enterprise.amount">ติดต่อเรา</div>
             <ul>
-              <li>งานไม่จำกัด</li>
-              <li>SLA & Dedicated support</li>
-              <li>SSO & ความปลอดภัยขั้นสูง</li>
+              <li data-i18n="pricing.enterprise.l1">งานไม่จำกัด</li>
+              <li data-i18n="pricing.enterprise.l2">SLA & Dedicated support</li>
+              <li data-i18n="pricing.enterprise.l3">SSO & ความปลอดภัยขั้นสูง</li>
             </ul>
-            <a href="#cta" class="btn btn--outline btn--block">ติดต่อฝ่ายขาย</a>
+            <a href="#cta" class="btn btn--outline btn--block" data-i18n="pricing.enterprise.cta">ติดต่อฝ่ายขาย</a>
           </article>
         </div>
       </div>
@@ -182,24 +186,24 @@
       <div class="container container--narrow">
         <div class="section__head reveal">
           <span class="eyebrow">FAQ</span>
-          <h2>คำถามที่พบบ่อย</h2>
+          <h2 data-i18n="faq.heading">คำถามที่พบบ่อย</h2>
         </div>
         <div class="faq" id="faqList">
           <div class="faq__item reveal">
-            <button class="faq__q">ต้องมีความรู้ด้านโปรแกรมมิ่งไหม?<span class="faq__icon">+</span></button>
-            <div class="faq__a"><p>ไม่จำเป็นเลยครับ Multica AI ออกแบบมาให้ใช้งานแบบ no-code ลาก-วางได้ทันที</p></div>
+            <button class="faq__q"><span data-i18n="faq.q1">ต้องมีความรู้ด้านโปรแกรมมิ่งไหม?</span><span class="faq__icon">+</span></button>
+            <div class="faq__a"><p data-i18n="faq.a1">ไม่จำเป็นเลยครับ Multica AI ออกแบบมาให้ใช้งานแบบ no-code ลาก-วางได้ทันที</p></div>
           </div>
           <div class="faq__item reveal">
-            <button class="faq__q">ทดลองใช้ฟรีได้นานแค่ไหน?<span class="faq__icon">+</span></button>
-            <div class="faq__a"><p>แพ็กเกจ Starter ใช้งานได้ฟรีตลอด ไม่มีค่าใช้จ่ายแอบแฝง อัปเกรดเมื่อพร้อม</p></div>
+            <button class="faq__q"><span data-i18n="faq.q2">ทดลองใช้ฟรีได้นานแค่ไหน?</span><span class="faq__icon">+</span></button>
+            <div class="faq__a"><p data-i18n="faq.a2">แพ็กเกจ Starter ใช้งานได้ฟรีตลอด ไม่มีค่าใช้จ่ายแอบแฝง อัปเกรดเมื่อพร้อม</p></div>
           </div>
           <div class="faq__item reveal">
-            <button class="faq__q">ข้อมูลของเราปลอดภัยหรือไม่?<span class="faq__icon">+</span></button>
-            <div class="faq__a"><p>เราเข้ารหัสข้อมูลทั้งระหว่างส่งและจัดเก็บ พร้อมมาตรฐานความปลอดภัยระดับองค์กร</p></div>
+            <button class="faq__q"><span data-i18n="faq.q3">ข้อมูลของเราปลอดภัยหรือไม่?</span><span class="faq__icon">+</span></button>
+            <div class="faq__a"><p data-i18n="faq.a3">เราเข้ารหัสข้อมูลทั้งระหว่างส่งและจัดเก็บ พร้อมมาตรฐานความปลอดภัยระดับองค์กร</p></div>
           </div>
           <div class="faq__item reveal">
-            <button class="faq__q">ยกเลิกได้ตลอดเวลาไหม?<span class="faq__icon">+</span></button>
-            <div class="faq__a"><p>ได้ครับ คุณสามารถยกเลิกหรือเปลี่ยนแพ็กเกจได้ทุกเมื่อ ไม่มีสัญญาผูกมัด</p></div>
+            <button class="faq__q"><span data-i18n="faq.q4">ยกเลิกได้ตลอดเวลาไหม?</span><span class="faq__icon">+</span></button>
+            <div class="faq__a"><p data-i18n="faq.a4">ได้ครับ คุณสามารถยกเลิกหรือเปลี่ยนแพ็กเกจได้ทุกเมื่อ ไม่มีสัญญาผูกมัด</p></div>
           </div>
         </div>
       </div>
@@ -209,11 +213,11 @@
     <section class="cta" id="cta">
       <div class="container">
         <div class="cta__box reveal">
-          <h2>พร้อมเปลี่ยนวิธีทำงานของคุณแล้วหรือยัง?</h2>
-          <p>เริ่มต้นฟรีวันนี้ ไม่ต้องใช้บัตรเครดิต</p>
+          <h2 data-i18n="cta.heading">พร้อมเปลี่ยนวิธีทำงานของคุณแล้วหรือยัง?</h2>
+          <p data-i18n="cta.sub">เริ่มต้นฟรีวันนี้ ไม่ต้องใช้บัตรเครดิต</p>
           <form class="cta__form" id="ctaForm" novalidate>
-            <input type="email" id="ctaEmail" placeholder="กรอกอีเมลของคุณ" autocomplete="email" />
-            <button type="submit" class="btn btn--primary">เริ่มใช้งานฟรี</button>
+            <input type="email" id="ctaEmail" data-i18n-placeholder="cta.placeholder" placeholder="กรอกอีเมลของคุณ" autocomplete="email" />
+            <button type="submit" class="btn btn--primary" data-i18n="cta.button">เริ่มใช้งานฟรี</button>
           </form>
           <small class="cta__note" id="ctaNote"></small>
         </div>
@@ -229,21 +233,21 @@
           <span class="brand__mark">◆</span>
           <span class="brand__name">Multica<span>AI</span></span>
         </a>
-        <p>แพลตฟอร์ม AI สำหรับการทำงานอัตโนมัติอัจฉริยะ</p>
+        <p data-i18n="footer.tagline">แพลตฟอร์ม AI สำหรับการทำงานอัตโนมัติอัจฉริยะ</p>
       </div>
       <div class="footer__cols">
-        <div><h4>ผลิตภัณฑ์</h4><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#how">How it works</a></div>
-        <div><h4>บริษัท</h4><a href="#">เกี่ยวกับเรา</a><a href="#">บล็อก</a><a href="#">ร่วมงานกับเรา</a></div>
-        <div><h4>ช่วยเหลือ</h4><a href="#faq">FAQ</a><a href="#">ติดต่อ</a><a href="#">เอกสาร</a></div>
+        <div><h4 data-i18n="footer.col1">ผลิตภัณฑ์</h4><a href="#features" data-i18n="nav.features">Features</a><a href="#pricing" data-i18n="nav.pricing">Pricing</a><a href="#how" data-i18n="nav.how">How it works</a></div>
+        <div><h4 data-i18n="footer.col2">บริษัท</h4><a href="#" data-i18n="footer.about">เกี่ยวกับเรา</a><a href="#" data-i18n="footer.blog">บล็อก</a><a href="#" data-i18n="footer.careers">ร่วมงานกับเรา</a></div>
+        <div><h4 data-i18n="footer.col3">ช่วยเหลือ</h4><a href="#faq" data-i18n="nav.faq">FAQ</a><a href="#" data-i18n="footer.contact">ติดต่อ</a><a href="#" data-i18n="footer.docs">เอกสาร</a></div>
       </div>
     </div>
     <div class="container footer__bottom">
-      <span>© <span id="year"></span> Multica AI. สงวนลิขสิทธิ์.</span>
-      <span>สร้างด้วย ❤️ ในประเทศไทย</span>
+      <span data-i18n-html="footer.rights">© <span id="year"></span> Multica AI. สงวนลิขสิทธิ์.</span>
+      <span data-i18n="footer.madein">สร้างด้วย ❤️ ในประเทศไทย</span>
     </div>
   </footer>
 
-  <button class="to-top" id="toTop" aria-label="กลับขึ้นบน">↑</button>
+  <button class="to-top" id="toTop" data-i18n-aria="aria.toTop" aria-label="กลับขึ้นบน">↑</button>
 
   <script src="js/main.js"></script>
 </body>

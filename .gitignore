@@ -17,3 +17,8 @@ Thumbs.db
 # Env
 .env
 .env.local
+
+# Multica agent/workspace artifacts
+.agent_context/
+.multica/
+CLAUDE.md
