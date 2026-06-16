@@ -95,7 +95,8 @@
       "footer.docs": "เอกสาร",
       "footer.rights": '© <span id="year"></span> Multica AI. สงวนลิขสิทธิ์.',
       "footer.madein": "สร้างด้วย ❤️ ในประเทศไทย",
-      "aria.toTop": "กลับขึ้นบน"
+      "aria.toTop": "กลับขึ้นบน",
+      "aria.closeModal": "ปิด"
     },
     en: {
       "nav.features": "Features",
@@ -184,7 +185,8 @@
       "footer.docs": "Docs",
       "footer.rights": '© <span id="year"></span> Multica AI. All rights reserved.',
       "footer.madein": "Made with ❤️ in Thailand",
-      "aria.toTop": "Back to top"
+      "aria.toTop": "Back to top",
+      "aria.closeModal": "Close"
     }
   };
 
@@ -342,6 +344,46 @@
       var answer = item.querySelector(".faq__a");
       var isOpen = item.classList.toggle("open");
       answer.style.maxHeight = isOpen ? answer.scrollHeight + "px" : null;
+    });
+  }
+
+  /* ---- Gallery lightbox ---- */
+  var lightbox = document.getElementById("lightbox");
+  var lightboxImg = document.getElementById("lightboxImg");
+  var lightboxCaption = document.getElementById("lightboxCaption");
+  var lightboxClose = document.getElementById("lightboxClose");
+  var gallery = document.getElementById("gallery");
+
+  function openLightbox(img) {
+    if (!lightbox) return;
+    lightboxImg.setAttribute("src", img.getAttribute("src"));
+    lightboxImg.setAttribute("alt", img.getAttribute("alt") || "");
+    var cap = img.parentElement ? img.parentElement.querySelector("figcaption") : null;
+    lightboxCaption.textContent = cap ? cap.textContent : "";
+    lightbox.classList.add("open");
+    lightbox.setAttribute("aria-hidden", "false");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    if (!lightbox) return;
+    lightbox.classList.remove("open");
+    lightbox.setAttribute("aria-hidden", "true");
+    document.body.style.overflow = "";
+  }
+
+  if (gallery && lightbox) {
+    gallery.addEventListener("click", function (e) {
+      var img = e.target.closest(".gallery__item img");
+      if (img) openLightbox(img);
+    });
+    lightboxClose.addEventListener("click", closeLightbox);
+    // Click on the backdrop (outside the image) closes the modal.
+    lightbox.addEventListener("click", function (e) {
+      if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && lightbox.classList.contains("open")) closeLightbox();
     });
   }
 

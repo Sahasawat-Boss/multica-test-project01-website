@@ -249,6 +249,29 @@ img { max-width: 100%; display: block; }
   padding-top: 24px; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.88rem;
 }
 
+/* ---------- Lightbox ---------- */
+.gallery__item { cursor: zoom-in; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center;
+  padding: 32px; background: rgba(4, 5, 12, 0.86); backdrop-filter: blur(8px);
+  opacity: 0; pointer-events: none; transition: opacity 0.28s ease;
+}
+.lightbox.open { opacity: 1; pointer-events: auto; }
+.lightbox__content { margin: 0; max-width: 1000px; width: 100%; text-align: center; }
+.lightbox__content img {
+  max-width: 100%; max-height: 78vh; object-fit: contain; margin: 0 auto;
+  border-radius: var(--radius); box-shadow: var(--shadow);
+  transform: scale(0.94); transition: transform 0.28s ease;
+}
+.lightbox.open .lightbox__content img { transform: scale(1); }
+.lightbox__content figcaption { color: var(--text); margin-top: 16px; font-size: 1rem; font-weight: 600; }
+.lightbox__close {
+  position: absolute; top: 22px; right: 26px; width: 46px; height: 46px; border-radius: 50%;
+  border: 1px solid var(--border); background: var(--surface); color: var(--text);
+  font-size: 1.8rem; line-height: 1; cursor: pointer; transition: background 0.2s, transform 0.2s;
+}
+.lightbox__close:hover { background: var(--surface-hover); transform: rotate(90deg); }
+
 /* ---------- To top ---------- */
 .to-top {
   position: fixed; bottom: 28px; right: 28px; width: 48px; height: 48px; border-radius: 50%;
