@@ -9,10 +9,10 @@
      ============================================================ */
   var translations = {
     th: {
-      "nav.features": "Features",
-      "nav.how": "How it works",
-      "nav.pricing": "Pricing",
-      "nav.faq": "FAQ",
+      "nav.features": "ฟีเจอร์",
+      "nav.how": "วิธีใช้งาน",
+      "nav.pricing": "ราคา",
+      "nav.faq": "คำถามที่พบบ่อย",
       "nav.cta": "เริ่มใช้งานฟรี",
       "hero.badge": "⚡ ขับเคลื่อนด้วย Claude Opus 4.8",
       "hero.title": 'เปลี่ยนงานที่ซ้ำซาก<br />ให้กลายเป็น <span class="gradient-text">ระบบอัตโนมัติอัจฉริยะ</span>',
