@@ -7,7 +7,7 @@
   <title>Multica AI — Intelligent Automation Platform</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Noto+Sans+Thai:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -32,10 +32,16 @@
         <a href="#pricing" data-i18n="nav.pricing">Pricing</a>
         <a href="#faq" data-i18n="nav.faq">FAQ</a>
         <a href="#cta" class="btn btn--ghost" data-i18n="nav.cta">เริ่มใช้งานฟรี</a>
-        <button class="lang-switch" id="langSwitch" type="button" aria-label="Switch language">
+        <div class="lang-switch" id="langSwitch" role="combobox" aria-haspopup="listbox" aria-expanded="false">
           <span class="lang-switch__icon" aria-hidden="true">🌐</span>
-          <span class="lang-switch__label" id="langLabel">EN</span>
-        </button>
+          <span class="lang-switch__label" id="langLabel">TH</span>
+          <svg class="lang-switch__chevron" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+          <ul class="lang-switch__menu" role="listbox" id="langMenu">
+            <li class="lang-switch__option" role="option" data-lang="th" aria-selected="true"><span>🇹🇭</span> ไทย</li>
+            <li class="lang-switch__option" role="option" data-lang="en" aria-selected="false"><span>🇺🇸</span> English</li>
+            <li class="lang-switch__option" role="option" data-lang="zh" aria-selected="false"><span>🇨🇳</span> 中文</li>
+          </ul>
+        </div>
       </nav>
       <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>

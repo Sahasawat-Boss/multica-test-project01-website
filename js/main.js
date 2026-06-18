@@ -187,6 +187,96 @@
       "footer.madein": "Made with ❤️ in Thailand",
       "aria.toTop": "Back to top",
       "aria.closeModal": "Close"
+    },
+    zh: {
+      "nav.features": "功能",
+      "nav.how": "使用方法",
+      "nav.pricing": "价格",
+      "nav.faq": "常见问题",
+      "nav.gallery": "图库",
+      "nav.cta": "免费开始",
+      "hero.badge": "⚡ 由 Claude Opus 4.8 驱动",
+      "hero.title": '将重复性工作<br />转变为<span class="gradient-text">智能自动化系统</span>',
+      "hero.sub": "Multica AI 是将 AI 融入您工作流程的平台——分析数据、回复客户、做出更精准的决策，只需几分钟。",
+      "hero.ctaPrimary": "免费开始 →",
+      "hero.ctaSecondary": "了解工作原理",
+      "hero.stat1": "正常运行时间",
+      "hero.stat2": "使用企业数",
+      "hero.stat3": "已处理任务",
+      "features.heading": "您的团队所需的一切，尽在一处",
+      "features.sub": "专为让您专注于真正重要的工作而设计的完整工具套件",
+      "features.f1.title": "AI 推理",
+      "features.f1.body": "理解您业务背景的语言模型，精准回答问题并总结数据。",
+      "features.f2.title": "工作流自动化",
+      "features.f2.body": "以无代码方式连接每个工作步骤，一次设置，全天候运行。",
+      "features.f3.title": "实时分析",
+      "features.f3.body": "即时更新的仪表板——一键即可纵览全局并深入分析。",
+      "features.f4.title": "企业级安全",
+      "features.f4.body": "银行级加密，配备细粒度访问控制和完整审计日志。",
+      "features.f5.title": "100+ 集成",
+      "features.f5.body": "连接您已使用的工具——Slack、Notion、Google 等更多。",
+      "features.f6.title": "分钟级部署",
+      "features.f6.body": "无需编写代码即可立即开始，并提供现成模板供选择。",
+      "how.heading": "3 步快速上手",
+      "how.s1.title": "连接数据",
+      "how.s1.body": "从您的来源导入数据——文件、数据库或 API。",
+      "how.s2.title": "设计工作流",
+      "how.s2.body": "拖放流程步骤，然后让 AI 处理其余部分。",
+      "how.s3.title": "让系统运行",
+      "how.s3.body": "系统自动运行，实时报告和通知。",
+      "gallery.heading": "见证平台实际运作",
+      "gallery.sub": "Multica AI 的真实截图和使用案例",
+      "gallery.cap1": "实时数据分析仪表板",
+      "gallery.cap2": "智能 AI 自动化系统",
+      "gallery.cap3": "无代码工作流构建器",
+      "gallery.cap4": "深度业务洞察报告",
+      "gallery.cap5": "全团队协作",
+      "gallery.cap6": "全天候 AI 助手",
+      "pricing.heading": "透明定价，按需选择",
+      "pricing.perMonth": "/月",
+      "pricing.popular": "热门",
+      "pricing.starter.l1": "1,000 任务/月",
+      "pricing.starter.l2": "3 个工作流",
+      "pricing.starter.l3": "社区支持",
+      "pricing.starter.cta": "免费开始",
+      "pricing.pro.l1": "50,000 任务/月",
+      "pricing.pro.l2": "无限工作流",
+      "pricing.pro.l3": "优先支持",
+      "pricing.pro.l4": "高级分析",
+      "pricing.pro.cta": "选择此套餐",
+      "pricing.enterprise.amount": "联系我们",
+      "pricing.enterprise.l1": "无限任务",
+      "pricing.enterprise.l2": "SLA 及专属支持",
+      "pricing.enterprise.l3": "SSO 及高级安全",
+      "pricing.enterprise.cta": "联系销售",
+      "faq.heading": "常见问题",
+      "faq.q1": "需要编程知识吗？",
+      "faq.a1": "完全不需要。Multica AI 设计为全无代码——拖放即可使用。",
+      "faq.q2": "免费试用多久？",
+      "faq.a2": "Starter 套餐永久免费，无隐藏费用，随时可升级。",
+      "faq.q3": "我们的数据安全吗？",
+      "faq.a3": "我们对传输中和静态数据均进行加密，符合企业级安全标准。",
+      "faq.q4": "可以随时取消吗？",
+      "faq.a4": "可以，您可以随时取消或更改套餐，无长期合同。",
+      "cta.heading": "准备好改变您的工作方式了吗？",
+      "cta.sub": "今天免费开始——无需信用卡",
+      "cta.placeholder": "输入您的电子邮件",
+      "cta.button": "免费开始",
+      "cta.invalid": "请输入有效的电子邮件地址",
+      "cta.success": "🎉 谢谢！我们已将开始链接发送至 {email}",
+      "footer.tagline": "智能工作自动化的 AI 平台",
+      "footer.col1": "产品",
+      "footer.col2": "公司",
+      "footer.col3": "支持",
+      "footer.about": "关于我们",
+      "footer.blog": "博客",
+      "footer.careers": "加入我们",
+      "footer.contact": "联系",
+      "footer.docs": "文档",
+      "footer.rights": '© <span id="year"></span> Multica AI. 保留所有权利。',
+      "footer.madein": "以 ❤️ 制作于泰国",
+      "aria.toTop": "返回顶部",
+      "aria.closeModal": "关闭"
     }
   };
 
@@ -202,6 +292,8 @@
     var yearEl = document.getElementById("year");
     if (yearEl) yearEl.textContent = new Date().getFullYear();
   }
+
+  var LANGS = ["th", "en", "zh"];
 
   function applyLang(lang) {
     if (!translations[lang]) lang = "th";
@@ -232,9 +324,15 @@
     // The footer year lives inside a data-i18n-html string, so re-inject it.
     setYear();
 
-    // Switch button shows the language you can switch TO.
-    var label = document.getElementById("langLabel");
-    if (label) label.textContent = lang === "th" ? "EN" : "ไทย";
+    // Sync label and active state in custom dropdown.
+    var labelEl = document.getElementById("langLabel");
+    var labelMap = { th: "TH", en: "EN", zh: "中文" };
+    if (labelEl) labelEl.textContent = labelMap[lang] || lang.toUpperCase();
+    document.querySelectorAll(".lang-switch__option").forEach(function (opt) {
+      var isActive = opt.getAttribute("data-lang") === lang;
+      opt.classList.toggle("active", isActive);
+      opt.setAttribute("aria-selected", isActive ? "true" : "false");
+    });
 
     try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
   }
@@ -244,10 +342,32 @@
   try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
   applyLang(saved || document.documentElement.getAttribute("lang") || "th");
 
-  var langSwitch = document.getElementById("langSwitch");
-  if (langSwitch) {
-    langSwitch.addEventListener("click", function () {
-      applyLang(currentLang === "th" ? "en" : "th");
+  var langSwitchEl = document.getElementById("langSwitch");
+  var langMenu = document.getElementById("langMenu");
+
+  function toggleLangMenu(force) {
+    if (!langSwitchEl) return;
+    var open = typeof force === "boolean" ? force : !langSwitchEl.classList.contains("open");
+    langSwitchEl.classList.toggle("open", open);
+    langSwitchEl.setAttribute("aria-expanded", open ? "true" : "false");
+  }
+
+  if (langSwitchEl) {
+    langSwitchEl.addEventListener("click", function (e) {
+      if (e.target.closest(".lang-switch__option")) {
+        var lang = e.target.closest(".lang-switch__option").getAttribute("data-lang");
+        applyLang(lang);
+        toggleLangMenu(false);
+        try { localStorage.setItem(STORAGE_KEY, lang); } catch (ex) {}
+      } else {
+        toggleLangMenu();
+      }
+    });
+    document.addEventListener("click", function (e) {
+      if (!langSwitchEl.contains(e.target)) toggleLangMenu(false);
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") toggleLangMenu(false);
     });
   }
 
